@@ -1,0 +1,99 @@
+
+@media (max-width: 767px) {
+  .text .container p {
+    font-size: 10px;
+    padding: 5px 5px;
+    margin: 30px;
+  }
+}
+
+.text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.text .container h2 {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-size: 40px;
+}
+
+.text .container p {
+  text-align: center;
+  padding: 15px 0;
+  line-height: 1.5;
+  color: #0000008a;
+}
+
+.pictur {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.pictur .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.pictur .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pictur .container .box:hover {
+  transition: 3s;
+  animation: pic 1s linear;
+}
+
+@keyframes pic {
+  from {
+    transform: translatey(30px);
+  }
+
+  to {
+    transform: translatex(-30px);
+  }
+}
+
+.pictur .container p {
+  border-radius: 30%;
+  position: absolute;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
+.pictur .container a {
+  color: white;
+  font-size: 20px;
+}
+.pictur .container .imges{
+  position: relative;
+}
+.pictur .container .imges::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgb(0 0 0 / 56%); 
+   width: 100%;
+  height: 100%;
+  
+}
+.pictur .container  .imges  img{
+  width: 350px;
+  height: 300px;
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,135 @@
+
+
+/* start-main titl */
+@media (max-width: 767px) {
+  .main-title {
+    padding: 5px 10px;
+    font-size: 8px;
+    margin: 50px auto;
+  }
+}
+
+.main-title {
+  position: relative;
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 100px auto;
+  z-index: 1;
+  transition: var(--maintransiton);
+  background-color: white;
+}
+
+.main-title::before,
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: var(--liner);
+  border-radius: 50%;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.main-title::before {
+  left: -30px;
+}
+
+.main-title::after {
+  right: -30px;
+}
+
+.main-title:hover::before {
+  z-index: -1;
+  animation: left 1s linear forwards;
+}
+
+.main-title:hover::after {
+  z-index: -1;
+  animation: right 1s linear forwards;
+}
+
+.main-title a {
+  color: black;
+}
+
+@keyframes left {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  100% {
+    border-radius: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+
+@keyframes right {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  100% {
+    border-radius: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* end */
+/* footer */
+@media (max-width: 767px) {
+    footer .container .link {
+      font-size: 10px;
+      margin: 0;
+      padding: 1px;
+      flex-wrap: wrap;
+      display: flex;
+    }
+  }
+  
+  footer {
+    background-image: var(--liner);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.732);
+  }
+  
+  footer .container .imge {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  footer .container .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  
+  footer .container .link a {
+    color: black;
+    padding: 30px 10px;
+    transition: 1s;
+  }
+  
+  footer .container .link a:hover {
+    color: rgba(248, 246, 246, 0.166);
+    transform: translateX(10px);
+  }
+  
+  footer .container p {
+    color: black;
+    text-align: center;
+    line-height: 50px;
+  }
+  

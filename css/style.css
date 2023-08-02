@@ -1,0 +1,279 @@
+
+/* end */
+@media (max-width: 767px) {
+  .text .container p {
+    font-size: 10px;
+    padding: 5px 5px;
+    margin: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .text .container p {
+    font-size: 10px;
+    padding: 5px 5px;
+    margin: 30px;
+  }
+}
+
+.text {
+  padding-top: 100px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.text .container h2 {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+
+.text .container p {
+  text-align: center;
+  padding: 15px 0;
+  line-height: 1.5;
+  color: #0000008a;
+}
+
+/*  */
+
+/* <!-- start-global  --> */
+.global {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.global .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.global .container .box {
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.global .box .fa-plane {
+  font-size: 20px;
+  color: var(--lapny);
+  padding: 10px 0;
+  transition: var(--maintransiton);
+}
+
+.global .box:hover .fa-plane {
+  transform: translateX(100px);
+}
+
+.global .container .box p {
+  text-align: center;
+  padding: 15px 0;
+  line-height: 1.5;
+  color: #0000008a;
+}
+
+.global .container .box h3 {
+  font-size: 15px;
+  font-weight: 50;
+  color: var(--back-color);
+  padding: 10px 0;
+}
+
+.box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+}
+
+.box h1 {
+  text-align: center;
+  padding: 50px 0;
+
+}
+
+.box .container .card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.box .container p {
+  width: 400px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.72);
+  padding: 30px 0;
+  font-weight: 100;
+
+}
+
+.box .container h2 {
+  color: var(--blacsh-colo);
+  font-weight: 100;
+  font-size: 15px;
+}
+
+@media (max-width:767px) {
+  .box .container .card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box .container p {
+    width: 333PX;
+  }
+  .box .container .card .imges img{
+    width: 250px;
+    height: 250px;
+  }
+}
+
+img {
+  max-width: 100%;
+
+}
+.box .container .card .imges img{
+  width: 450px;
+  height: 450px;
+}
+
+/*popular  */
+.popular {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.popular .container {
+  text-align: center;
+}
+
+.popular .container h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0;
+  font-family: initial;
+}
+
+@media (max-width: 767px) {
+  .popular .container img {
+    width: 325px;
+    height: 148px;
+  }
+
+  
+}
+
+/* INSTAGRAm */
+.INSTAGRAm {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.INSTAGRAm p {
+  text-align: center;
+  font-size: 30px;
+  padding: 70px 0;
+  font-family: ui-serif;
+  font-weight: bold;
+}
+
+.INSTAGRAm .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.INSTAGRAm .container .play img {
+  border-radius: 30px;
+  transition: var(--maintransiton);
+  width: 350px;
+    height: 350px;
+}
+
+
+
+.INSTAGRAm .paly {
+  position: relative;
+}
+
+.INSTAGRAm .paly i {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  font-size: 50px;
+  color: white;
+  color: var(--lapny);
+
+}
+
+.INSTAGRAm .container .play {
+  position: relative;
+}
+
+.INSTAGRAm .container .play i {
+  position: absolute;
+ color: transparent;
+ left: 50%;
+  top: 50%;
+  font-size: 60px;
+transition: .5S;
+transform: translate(-50%,-50%);
+}
+
+.INSTAGRAm .container .play:hover i{
+  /* transform: rotate(360deg); */
+  color:white;
+  background-image: var(--insta);
+border-radius: 20px;}
+
+
+.link {
+  padding-top: 55px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+  position: relative;
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link .container  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute  ;
+}
+
+.link .container li {
+  padding: 30px;
+  font-size: 40px;
+  transition: 1s;
+}
+.link .container 
+a{
+  padding: 6px;
+}
+.link .container .fa-brands {
+  color:black;
+  background-image: var(--liner);
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 30px;
+transition: 1s;
+}
+
+.link .container a:hover {
+  font-size: 47px;
+}
+
+.link ul li a i{
+  position: absolute;
+}

@@ -1,0 +1,260 @@
+
+/* end */
+@media (max-width: 767px) {
+  .text .container p {
+    font-size: 10px;
+    padding: 5px 5px;
+    margin: 30px;
+  }
+}
+
+.text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.text .container h2 {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+
+.text .container p {
+  text-align: center;
+  padding: 15px 0;
+  line-height: 1.5;
+  color: #0000008a;
+}
+
+/* start-main titl */
+@media (max-width: 767px) {
+  .main-title {
+    padding: 5px 10px;
+    font-size: 8px;
+    margin: 50px auto;
+  }
+}
+
+.main-title {
+  position: relative;
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 100px auto;
+  z-index: 1;
+  transition: var(--maintransiton);
+  background-color: var(--second-coloe);
+}
+
+.main-title::before,
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--maincolor);
+  border-radius: 50%;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.main-title::before {
+  left: -30px;
+}
+
+.main-title::after {
+  right: -30px;
+}
+
+.main-title:hover::before {
+  z-index: -1;
+  animation: left 1s linear forwards;
+}
+
+.main-title:hover::after {
+  z-index: -1;
+  animation: right 1s linear forwards;
+}
+
+@keyframes left {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  100% {
+    border-radius: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+
+@keyframes right {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  100% {
+    border-radius: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* end */
+img {
+  max-width: 100%;
+}
+
+/* INSTAGRAm */
+.INSTAGRAm {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.INSTAGRAm p {
+  text-align: center;
+  font-size: 30px;
+  padding: 70px 0;
+}
+
+.INSTAGRAm .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.INSTAGRAm .container img {
+  border-radius: 30px;
+  transition: var(--maintransiton);
+}
+
+.INSTAGRAm .container img:hover {
+  transform: rotate(30deg);
+}
+
+.link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.link .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link .container li {
+  padding: 10px;
+  font-size: 40px;
+  transition: var(--maintransiton);
+}
+
+.link .container li:hover {
+  transform: rotatex(360deg);
+}
+/* footer */
+@media (max-width: 767px) {
+  footer .container .link {
+    font-size: 10px;
+    margin: 0;
+    padding: 1px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+}
+
+footer {
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer .container .imge {
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer .container .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+footer .container .link a {
+  color: white;
+  padding: 30px 10px;
+  transition: 1s;
+}
+
+footer .container .link a:hover {
+  color: rgba(248, 246, 246, 0.166);
+  transform: translateX(10px);
+}
+
+footer .container p {
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+@media (max-width: 767px) {
+
+  .who .container,
+  .weare .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .who .container,
+  .weare .container .imge,
+  .INSTAGRAm .container a {
+    text-align: center;
+  }
+}
+
+.dropdown:hover .fa-caret-down {
+  transform: rotate(75deg);
+  transition: 1.5s;
+}
+
+@media (max-width: 767px) {
+
+  .dropdown .fa-caret-down:hover {
+    transform: rotate(90deg);
+    transition: 1.5s;
+  }
+  .fa-caret-down {
+    font-size: 33PX;
+  }
+  .topnav {
+    display: block;
+}
+.dropdown-content a {
+width: 170px;
+border-radius: 30px;
+
+}
+}
+
+@media (max-width: 992px) {
+  .topnav a {
+    font-size: 9px;
+  }
+  .dropdown-content  {
+    flex-direction: column;
+}
+}

@@ -1,0 +1,117 @@
+
+/* end */
+@media (max-width: 767px) {
+  .text .container p {
+    font-size: 10px;
+    padding: 5px 5px;
+    margin: 30px;
+  }
+}
+
+.text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--second-coloe);
+}
+
+.text .container h2 {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+  font-size: 30px;
+}
+
+.text .container p {
+  text-align: center;
+  padding: 15px 0;
+  line-height: 1.5;
+  color: #0000008a;
+}
+
+/* start-main titl */
+@media (max-width: 767px) {
+  .main-title {
+    padding: 5px 10px;
+    font-size: 8px;
+    margin: 50px auto;
+  }
+}
+
+.main-title {
+  position: relative;
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 100px auto;
+  z-index: 1;
+  transition: var(--maintransiton);
+  background-color: var(--second-coloe);
+}
+
+.main-title::before,
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--maincolor);
+  border-radius: 50%;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.main-title::before {
+  left: -30px;
+}
+
+.main-title::after {
+  right: -30px;
+}
+
+.main-title:hover::before {
+  z-index: -1;
+  animation: left 1s linear forwards;
+}
+
+.main-title:hover::after {
+  z-index: -1;
+  animation: right 1s linear forwards;
+}
+
+@keyframes left {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  100% {
+    border-radius: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+
+@keyframes right {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  100% {
+    border-radius: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* end */
+img {
+  max-width: 100%;
+}
+

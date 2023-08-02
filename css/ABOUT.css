@@ -1,0 +1,62 @@
+
+/* //// */
+.box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+}
+
+.box h1 {
+  text-align: center;
+  padding: 50px 0;
+
+}
+
+.box .container .card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.box .container p {
+  width: 400px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.72);
+  padding: 30px 0;
+  font-weight: 100;
+
+}
+
+.box .container h2 {
+  color: var(--blacsh-colo);
+  font-weight: 100;
+  font-size: 15px;
+}
+
+@media (max-width:767px) {
+  .box .container .card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box .container img{
+    width: 250px;
+    height: 250px;
+  }
+
+  .box .container p {
+    width: 333PX;
+  }
+}
+
+.box .container img{
+  width: 450px;
+  height: 450px;
+}
+img {
+  max-width: 100%;
+
+}
+
+ 
